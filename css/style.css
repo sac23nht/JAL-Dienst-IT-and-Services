@@ -142,8 +142,16 @@ p { margin: 0 0 14px; color: var(--text-muted); }
 .logo-grad-end { stop-color: var(--accent-2); }
 .logo-dot { fill: var(--accent-3); }
 
+.logo-text-group { display: flex; flex-direction: column; line-height: 1.15; }
 .logo-text { font-size: 1.05rem; letter-spacing: .01em; }
 .logo-text strong { color: var(--accent-3); font-weight: 800; }
+.logo-tagline {
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
 
 .nav {
   display: flex;
