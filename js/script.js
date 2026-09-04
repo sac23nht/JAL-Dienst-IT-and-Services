@@ -28,7 +28,8 @@ form.addEventListener("submit", (e) => {
     form.reportValidity();
     return;
   }
-  formNote.textContent = "Thanks! Your message has been noted. We'll get back to you shortly.";
+  const lang = document.documentElement.getAttribute("lang") || "en";
+  formNote.textContent = translations[lang]["form.successNote"];
   form.reset();
 });
 

@@ -19,14 +19,19 @@
     </a>
 
     <nav class="nav" id="nav">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#process">Process</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#process" data-i18n="nav.process">Process</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
 
-    <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Language switch">
+      <button type="button" data-lang="en" class="active">EN</button>
+      <button type="button" data-lang="de">DE</button>
+    </div>
+
+    <a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav.cta">Get a Quote</a>
 
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -38,22 +43,22 @@
 <section class="hero" id="home">
   <div class="hero-glow"></div>
   <div class="container hero-inner">
-    <p class="eyebrow">IT Services &amp; Digital Solutions</p>
-    <h1>Technology &amp; Services<br> that move your business <span class="text-gradient">forward</span></h1>
-    <p class="hero-sub">
+    <p class="eyebrow" data-i18n="hero.eyebrow">IT Services &amp; Digital Solutions</p>
+    <h1 data-i18n="hero.title">Technology &amp; Services<br> that move your business <span class="text-gradient">forward</span></h1>
+    <p class="hero-sub" data-i18n="hero.sub">
       JAL Dienst builds websites, runs digital marketing, engineers custom software, automates
       your workflows, connects your world with IoT, and integrates AI into the applications you
       already run.
     </p>
     <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">Start a Project</a>
-      <a href="#services" class="btn btn-ghost">Explore Services</a>
+      <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Start a Project</a>
+      <a href="#services" class="btn btn-ghost" data-i18n="hero.cta2">Explore Services</a>
     </div>
 
     <div class="hero-stats">
-      <div class="stat"><span class="stat-num">6</span><span class="stat-label">Service Lines</span></div>
-      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Client Focused</span></div>
-      <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Support Mindset</span></div>
+      <div class="stat"><span class="stat-num">6</span><span class="stat-label" data-i18n="hero.stat1">Service Lines</span></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label" data-i18n="hero.stat2">Client Focused</span></div>
+      <div class="stat"><span class="stat-num">24/7</span><span class="stat-label" data-i18n="hero.stat3">Support Mindset</span></div>
     </div>
   </div>
 </section>
@@ -62,9 +67,9 @@
 <section class="services" id="services">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">What We Do</p>
-      <h2>End-to-end IT &amp; Digital Services</h2>
-      <p class="section-sub">From your first web page to AI running inside your existing systems &mdash; one partner for the full stack.</p>
+      <p class="eyebrow" data-i18n="services.eyebrow">What We Do</p>
+      <h2 data-i18n="services.title">End-to-end IT &amp; Digital Services</h2>
+      <p class="section-sub" data-i18n="services.sub">From your first web page to AI running inside your existing systems &mdash; one partner for the full stack.</p>
     </div>
 
     <div class="services-grid">
@@ -73,12 +78,12 @@
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13Z" stroke="currentColor" stroke-width="1.6"/><path d="M3 8.5h18" stroke="currentColor" stroke-width="1.6"/><circle cx="6" cy="6" r=".6" fill="currentColor"/><circle cx="8.2" cy="6" r=".6" fill="currentColor"/></svg>
         </div>
-        <h3>Web Pages &amp; Web Apps</h3>
-        <p>Fast, responsive websites and web applications &mdash; from marketing pages to full customer portals, built to convert and built to last.</p>
+        <h3 data-i18n="service.web.title">Web Pages &amp; Web Apps</h3>
+        <p data-i18n="service.web.desc">Fast, responsive websites and web applications &mdash; from marketing pages to full customer portals, built to convert and built to last.</p>
         <ul class="service-points">
-          <li>Business &amp; landing pages</li>
-          <li>E-commerce &amp; portals</li>
-          <li>Ongoing maintenance</li>
+          <li data-i18n="service.web.point1">Business &amp; landing pages</li>
+          <li data-i18n="service.web.point2">E-commerce &amp; portals</li>
+          <li data-i18n="service.web.point3">Ongoing maintenance</li>
         </ul>
       </article>
 
@@ -86,12 +91,12 @@
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none"><path d="M4 19.5 9 8l4 6 3-4 4 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="19.5" r="1" fill="currentColor"/><circle cx="20" cy="19.5" r="1" fill="currentColor"/></svg>
         </div>
-        <h3>Digital Marketing</h3>
-        <p>Grow your reach with data-driven campaigns across search, social and content &mdash; measured against real business outcomes.</p>
+        <h3 data-i18n="service.marketing.title">Digital Marketing</h3>
+        <p data-i18n="service.marketing.desc">Grow your reach with data-driven campaigns across search, social and content &mdash; measured against real business outcomes.</p>
         <ul class="service-points">
-          <li>SEO &amp; SEM</li>
-          <li>Social media campaigns</li>
-          <li>Analytics &amp; reporting</li>
+          <li data-i18n="service.marketing.point1">SEO &amp; SEM</li>
+          <li data-i18n="service.marketing.point2">Social media campaigns</li>
+          <li data-i18n="service.marketing.point3">Analytics &amp; reporting</li>
         </ul>
       </article>
 
@@ -99,12 +104,12 @@
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
         </div>
-        <h3>Software Applications</h3>
-        <p>Custom desktop, web and mobile applications designed around how your business actually works, not the other way around.</p>
+        <h3 data-i18n="service.software.title">Software Applications</h3>
+        <p data-i18n="service.software.desc">Custom desktop, web and mobile applications designed around how your business actually works, not the other way around.</p>
         <ul class="service-points">
-          <li>Custom business software</li>
-          <li>API &amp; systems integration</li>
-          <li>Cloud-native builds</li>
+          <li data-i18n="service.software.point1">Custom business software</li>
+          <li data-i18n="service.software.point2">API &amp; systems integration</li>
+          <li data-i18n="service.software.point3">Cloud-native builds</li>
         </ul>
       </article>
 
@@ -112,40 +117,40 @@
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.6"/></svg>
         </div>
-        <h3>Automation</h3>
-        <p>Eliminate repetitive manual work with automated workflows that connect your tools and free your team to focus on what matters.</p>
+        <h3 data-i18n="service.automation.title">Automation</h3>
+        <p data-i18n="service.automation.desc">Eliminate repetitive manual work with automated workflows that connect your tools and free your team to focus on what matters.</p>
         <ul class="service-points">
-          <li>Workflow &amp; process automation</li>
-          <li>RPA &amp; scripting</li>
-          <li>Tool &amp; data integration</li>
+          <li data-i18n="service.automation.point1">Workflow &amp; process automation</li>
+          <li data-i18n="service.automation.point2">RPA &amp; scripting</li>
+          <li data-i18n="service.automation.point3">Tool &amp; data integration</li>
         </ul>
       </article>
 
       <article class="service-card featured">
-        <span class="badge">Add-on</span>
+        <span class="badge" data-i18n="badge.addon">Add-on</span>
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.4" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v2.4M12 18.6V21M21 12h-2.4M5.4 12H3M18 6l-1.7 1.7M7.7 16.3 6 18M18 18l-1.7-1.7M7.7 7.7 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
         </div>
-        <h3>IoT Applications</h3>
-        <p>Connect devices, sensors and machines into applications that give you real-time visibility and control over the physical world.</p>
+        <h3 data-i18n="service.iot.title">IoT Applications</h3>
+        <p data-i18n="service.iot.desc">Connect devices, sensors and machines into applications that give you real-time visibility and control over the physical world.</p>
         <ul class="service-points">
-          <li>Sensor &amp; device connectivity</li>
-          <li>Real-time monitoring dashboards</li>
-          <li>Edge-to-cloud pipelines</li>
+          <li data-i18n="service.iot.point1">Sensor &amp; device connectivity</li>
+          <li data-i18n="service.iot.point2">Real-time monitoring dashboards</li>
+          <li data-i18n="service.iot.point3">Edge-to-cloud pipelines</li>
         </ul>
       </article>
 
       <article class="service-card featured">
-        <span class="badge">Add-on</span>
+        <span class="badge" data-i18n="badge.addon">Add-on</span>
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="10" r="1.1" fill="currentColor"/><circle cx="15" cy="10" r="1.1" fill="currentColor"/><path d="M8.5 14.5c1 1 6 1 7 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
         </div>
-        <h3>AI Integration</h3>
-        <p>Bring AI into the applications you already run &mdash; smarter search, assistants, automation and insights layered onto your existing stack.</p>
+        <h3 data-i18n="service.ai.title">AI Integration</h3>
+        <p data-i18n="service.ai.desc">Bring AI into the applications you already run &mdash; smarter search, assistants, automation and insights layered onto your existing stack.</p>
         <ul class="service-points">
-          <li>AI features in existing apps</li>
-          <li>Chat &amp; assistant integration</li>
-          <li>Data &amp; document intelligence</li>
+          <li data-i18n="service.ai.point1">AI features in existing apps</li>
+          <li data-i18n="service.ai.point2">Chat &amp; assistant integration</li>
+          <li data-i18n="service.ai.point3">Data &amp; document intelligence</li>
         </ul>
       </article>
 
@@ -157,25 +162,25 @@
 <section class="about" id="about">
   <div class="container about-inner">
     <div class="about-text">
-      <p class="eyebrow">About JAL Dienst</p>
-      <h2>One IT partner, the whole stack covered</h2>
-      <p>
+      <p class="eyebrow" data-i18n="about.eyebrow">About JAL Dienst</p>
+      <h2 data-i18n="about.title">One IT partner, the whole stack covered</h2>
+      <p data-i18n="about.text">
         JAL Dienst is an IT and digital services company built around a simple idea: businesses shouldn't
         need five different vendors to go from an idea to a working, connected, intelligent system.
         We design your web presence, market it, build the software behind it, automate the busywork,
         connect it to the physical world with IoT, and layer AI on top of it &mdash; all under one roof.
       </p>
       <div class="about-list">
-        <div class="about-item"><span>01</span>Dedicated project ownership from discovery to delivery</div>
-        <div class="about-item"><span>02</span>Solutions sized to fit your business, not a generic template</div>
-        <div class="about-item"><span>03</span>Support that continues after launch, not just at handover</div>
+        <div class="about-item"><span>01</span><span data-i18n="about.item1">Dedicated project ownership from discovery to delivery</span></div>
+        <div class="about-item"><span>02</span><span data-i18n="about.item2">Solutions sized to fit your business, not a generic template</span></div>
+        <div class="about-item"><span>03</span><span data-i18n="about.item3">Support that continues after launch, not just at handover</span></div>
       </div>
     </div>
     <div class="about-visual" aria-hidden="true">
       <div class="orbit-card card-1">Web</div>
       <div class="orbit-card card-2">AI</div>
       <div class="orbit-card card-3">IoT</div>
-      <div class="orbit-card card-4">Automation</div>
+      <div class="orbit-card card-4" data-i18n="about.orbit.automation">Automation</div>
       <div class="orbit-core">JD</div>
     </div>
   </div>
@@ -185,29 +190,29 @@
 <section class="process" id="process">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">How We Work</p>
-      <h2>A straightforward path from idea to launch</h2>
+      <p class="eyebrow" data-i18n="process.eyebrow">How We Work</p>
+      <h2 data-i18n="process.title">A straightforward path from idea to launch</h2>
     </div>
     <div class="process-grid">
       <div class="process-step">
         <span class="step-num">1</span>
-        <h3>Discover</h3>
-        <p>We learn your business, goals and constraints before proposing a solution.</p>
+        <h3 data-i18n="process.step1.title">Discover</h3>
+        <p data-i18n="process.step1.desc">We learn your business, goals and constraints before proposing a solution.</p>
       </div>
       <div class="process-step">
         <span class="step-num">2</span>
-        <h3>Design</h3>
-        <p>We plan the architecture, experience and integrations up front.</p>
+        <h3 data-i18n="process.step2.title">Design</h3>
+        <p data-i18n="process.step2.desc">We plan the architecture, experience and integrations up front.</p>
       </div>
       <div class="process-step">
         <span class="step-num">3</span>
-        <h3>Build</h3>
-        <p>We develop, automate and connect systems in focused iterations.</p>
+        <h3 data-i18n="process.step3.title">Build</h3>
+        <p data-i18n="process.step3.desc">We develop, automate and connect systems in focused iterations.</p>
       </div>
       <div class="process-step">
         <span class="step-num">4</span>
-        <h3>Support</h3>
-        <p>We launch, monitor and continue improving alongside your team.</p>
+        <h3 data-i18n="process.step4.title">Support</h3>
+        <p data-i18n="process.step4.desc">We launch, monitor and continue improving alongside your team.</p>
       </div>
     </div>
   </div>
@@ -217,42 +222,42 @@
 <section class="contact" id="contact">
   <div class="container contact-inner">
     <div class="contact-info">
-      <p class="eyebrow">Get In Touch</p>
-      <h2>Tell us what you're building</h2>
-      <p class="section-sub">Share a few details about your project and we'll get back to you with next steps.</p>
+      <p class="eyebrow" data-i18n="contact.eyebrow">Get In Touch</p>
+      <h2 data-i18n="contact.title">Tell us what you're building</h2>
+      <p class="section-sub" data-i18n="contact.sub">Share a few details about your project and we'll get back to you with next steps.</p>
 
       <div class="contact-details">
-        <div><strong>Email</strong><span>hello@jaldienst.com</span></div>
-        <div><strong>Services</strong><span>Web &middot; Marketing &middot; Software &middot; Automation &middot; IoT &middot; AI</span></div>
+        <div><strong data-i18n="contact.emailLabel">Email</strong><span><a href="mailto:saijaya.c@gmail.com">saijaya.c@gmail.com</a></span></div>
+        <div><strong data-i18n="contact.servicesLabel">Services</strong><span data-i18n="contact.servicesValue">Web &middot; Marketing &middot; Software &middot; Automation &middot; IoT &middot; AI</span></div>
       </div>
     </div>
 
     <form class="contact-form" id="contactForm" novalidate>
       <div class="form-row">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required placeholder="Your name">
+        <label for="name" data-i18n="form.nameLabel">Name</label>
+        <input type="text" id="name" name="name" required data-i18n-placeholder="form.namePlaceholder" placeholder="Your name">
       </div>
       <div class="form-row">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="you@company.com">
+        <label for="email" data-i18n="form.emailLabel">Email</label>
+        <input type="email" id="email" name="email" required data-i18n-placeholder="form.emailPlaceholder" placeholder="you@company.com">
       </div>
       <div class="form-row">
-        <label for="service">Interested in</label>
+        <label for="service" data-i18n="form.serviceLabel">Interested in</label>
         <select id="service" name="service">
-          <option>Web Pages / Web App</option>
-          <option>Digital Marketing</option>
-          <option>Software Application</option>
-          <option>Automation</option>
-          <option>IoT Application</option>
-          <option>AI Integration</option>
-          <option>Something else</option>
+          <option data-i18n="form.option1">Web Pages / Web App</option>
+          <option data-i18n="form.option2">Digital Marketing</option>
+          <option data-i18n="form.option3">Software Application</option>
+          <option data-i18n="form.option4">Automation</option>
+          <option data-i18n="form.option5">IoT Application</option>
+          <option data-i18n="form.option6">AI Integration</option>
+          <option data-i18n="form.option7">Something else</option>
         </select>
       </div>
       <div class="form-row">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project"></textarea>
+        <label for="message" data-i18n="form.messageLabel">Message</label>
+        <textarea id="message" name="message" rows="4" required data-i18n-placeholder="form.messagePlaceholder" placeholder="Tell us about your project"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+      <button type="submit" class="btn btn-primary form-submit" data-i18n="form.submit">Send Message</button>
       <p class="form-note" id="formNote" role="status"></p>
     </form>
   </div>
@@ -265,11 +270,12 @@
       <span class="logo-mark">JD</span>
       <span class="logo-text">JAL <strong>Dienst</strong></span>
     </a>
-    <p class="footer-tag">IT &amp; Digital Services &mdash; Web &middot; Marketing &middot; Software &middot; Automation &middot; IoT &middot; AI</p>
-    <p class="footer-copy">&copy; <span id="year"></span> JAL Dienst. All rights reserved.</p>
+    <p class="footer-tag" data-i18n="footer.tag">IT &amp; Digital Services &mdash; Web &middot; Marketing &middot; Software &middot; Automation &middot; IoT &middot; AI</p>
+    <p class="footer-copy">&copy; <span id="year"></span> JAL Dienst. <span data-i18n="footer.rights">All rights reserved.</span></p>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
