@@ -1,5 +1,21 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// Header shadow + back-to-top visibility on scroll
+const header = document.getElementById("header");
+const backToTop = document.getElementById("backToTop");
+
+const onScroll = () => {
+  const scrolled = window.scrollY > 40;
+  header.classList.toggle("scrolled", scrolled);
+  backToTop.classList.toggle("visible", window.scrollY > 480);
+};
+onScroll();
+window.addEventListener("scroll", onScroll, { passive: true });
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
 // Mobile nav toggle
 const navToggle = document.getElementById("navToggle");
 const nav = document.getElementById("nav");
@@ -33,12 +49,20 @@ form.addEventListener("submit", (e) => {
   form.reset();
 });
 
-// Fade-in on scroll
-const revealTargets = document.querySelectorAll(".service-card, .process-step, .about-text, .about-visual, .contact-info, .contact-form");
-revealTargets.forEach((el) => {
-  el.style.opacity = "0";
-  el.style.transform = "translateY(16px)";
-  el.style.transition = "opacity .5s ease, transform .5s ease";
+// Fade-in on scroll, staggered within each group
+const revealGroups = [
+  document.querySelectorAll(".service-card"),
+  document.querySelectorAll(".process-step"),
+  document.querySelectorAll(".about-text, .about-visual"),
+  document.querySelectorAll(".contact-info, .contact-form"),
+];
+
+revealGroups.forEach((group) => {
+  group.forEach((el, i) => {
+    el.style.opacity = "0";
+    el.style.transform = "translateY(16px)";
+    el.style.transition = `opacity .55s ease ${i * 0.08}s, transform .55s ease ${i * 0.08}s`;
+  });
 });
 
 const observer = new IntersectionObserver(
@@ -54,4 +78,36 @@ const observer = new IntersectionObserver(
   { threshold: 0.15 }
 );
 
-revealTargets.forEach((el) => observer.observe(el));
+revealGroups.forEach((group) => group.forEach((el) => observer.observe(el)));
+
+// Count-up animation for hero stats
+const countEls = document.querySelectorAll(".stat-num[data-count]");
+
+function animateCount(el) {
+  const target = parseInt(el.getAttribute("data-count"), 10);
+  const suffix = el.getAttribute("data-suffix") || "";
+  const duration = 1200;
+  const start = performance.now();
+
+  function tick(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(target * eased) + suffix;
+    if (progress < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+const countObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCount(entry.target);
+        countObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+countEls.forEach((el) => countObserver.observe(el));
