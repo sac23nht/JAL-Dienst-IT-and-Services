@@ -41,6 +41,12 @@
 
 <!-- Hero -->
 <section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-grid"></div>
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
   <div class="hero-glow"></div>
   <div class="container hero-inner">
     <p class="eyebrow" data-i18n="hero.eyebrow">IT Services &amp; Digital Solutions</p>
@@ -56,8 +62,8 @@
     </div>
 
     <div class="hero-stats">
-      <div class="stat"><span class="stat-num">6</span><span class="stat-label" data-i18n="hero.stat1">Service Lines</span></div>
-      <div class="stat"><span class="stat-num">100%</span><span class="stat-label" data-i18n="hero.stat2">Client Focused</span></div>
+      <div class="stat"><span class="stat-num" data-count="6" data-suffix="">0</span><span class="stat-label" data-i18n="hero.stat1">Service Lines</span></div>
+      <div class="stat"><span class="stat-num" data-count="100" data-suffix="%">0%</span><span class="stat-label" data-i18n="hero.stat2">Client Focused</span></div>
       <div class="stat"><span class="stat-num">24/7</span><span class="stat-label" data-i18n="hero.stat3">Support Mindset</span></div>
     </div>
   </div>
@@ -177,6 +183,8 @@
       </div>
     </div>
     <div class="about-visual" aria-hidden="true">
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
       <div class="orbit-card card-1">Web</div>
       <div class="orbit-card card-2">AI</div>
       <div class="orbit-card card-3">IoT</div>
@@ -274,6 +282,10 @@
     <p class="footer-copy">&copy; <span id="year"></span> JAL Dienst. <span data-i18n="footer.rights">All rights reserved.</span></p>
   </div>
 </footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
 
 <script src="js/i18n.js"></script>
 <script src="js/script.js"></script>
