@@ -3,6 +3,7 @@ const translations = {
     "nav.home": "Home",
     "nav.services": "Services",
     "nav.about": "About",
+    "nav.clients": "Clients",
     "nav.team": "Team",
     "nav.process": "Process",
     "nav.contact": "Contact",
@@ -67,6 +68,10 @@ const translations = {
     "about.item3": "Support that continues after launch, not just at handover",
     "about.orbit.automation": "Automation",
 
+    "clients.eyebrow": "Our Clients",
+    "clients.title": "Trusted by ambitious businesses",
+    "clients.sub": "We are proud to support organisations across technology, consulting, innovation and beyond.",
+
     "team.eyebrow": "Our Team",
     "team.title": "Dedicated teams, not generalists stretched thin",
     "team.sub": "Every application type we build is owned by a focused, dedicated team that lives and breathes that discipline.",
@@ -130,6 +135,7 @@ const translations = {
     "nav.home": "Start",
     "nav.services": "Leistungen",
     "nav.about": "Über uns",
+    "nav.clients": "Kunden",
     "nav.team": "Team",
     "nav.process": "Ablauf",
     "nav.contact": "Kontakt",
@@ -193,6 +199,10 @@ const translations = {
     "about.item2": "Lösungen, die zu Ihrem Unternehmen passen &mdash; keine Standardvorlage",
     "about.item3": "Support, der auch nach dem Launch weitergeht, nicht nur bei der Übergabe",
     "about.orbit.automation": "Automatisierung",
+
+    "clients.eyebrow": "Unsere Kunden",
+    "clients.title": "Vertrauen von ambitionierten Unternehmen",
+    "clients.sub": "Wir unterstützen stolz Organisationen aus Technologie, Beratung, Innovation und darüber hinaus.",
 
     "team.eyebrow": "Unser Team",
     "team.title": "Spezialisierte Teams statt Alleskönner",

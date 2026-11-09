@@ -39,14 +39,10 @@ const form = document.getElementById("contactForm");
 const formNote = document.getElementById("formNote");
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
   if (!form.checkValidity()) {
+    e.preventDefault();
     form.reportValidity();
-    return;
   }
-  const lang = document.documentElement.getAttribute("lang") || "en";
-  formNote.textContent = translations[lang]["form.successNote"];
-  form.reset();
 });
 
 // Fade-in on scroll, staggered within each group
